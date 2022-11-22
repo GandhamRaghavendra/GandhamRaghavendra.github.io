@@ -692,15 +692,14 @@ button:focus {
   background-color: transparent;
   width: 80%;
   text-align: left;
-
   -webkit-transition: 0.3s;
   transition: 0.3s;
 }
 .portfolio-icon > div > p {
   color: white;
 }
-.portfolio-icon > div >p>b{
-  color: red;
+.portfolio-icon > div > p > b {
+  color:#ffc900;
 }
 .portfolio-hover {
   display: flex;
@@ -749,8 +748,9 @@ button:focus {
 }
 
 #gitstats {
-  display: flex;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 110px;
   margin-top: 50px;
 }
 
