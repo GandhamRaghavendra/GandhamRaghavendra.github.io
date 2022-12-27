@@ -573,51 +573,6 @@ button:focus {
 }
 
 /*::::::::::::::::::::::::::::::::::::
-   Why choose Me Section
-::::::::::::::::::::::::::::::::::::*/
-/* 
-.single-why-me {
-  position: relative;
-  padding-right: 115px;
-  text-align: right;
-  margin-bottom: 30px;
-}
-
-.single-why-me:hover .why-me-icon {
-  background-color: #000;
-  color: #ffc900;
-}
-
-.why-me-right .why-me-icon,
-.why-me-left .why-me-icon {
-  color: #fff;
-  position: absolute;
-  font-size: 40px;
-  width: 100px;
-  height: 100%;
-  border: 1px solid #000;
-  text-align: center;
-  line-height: 1;
-  right: 0;
-  bottom: 0;
-  display: inline-block;
-  background-color: #ffc900;
-  -webkit-transition: 0.3s;
-  transition: 0.3s;
-}
-
-.single-why-me.why-me-right {
-  text-align: left;
-  padding-right: 0;
-  padding-left: 115px;
-}
-
-.why-me-right .why-me-icon {
-  right: auto;
-  left: 0;
-} */
-
-/*::::::::::::::::::::::::::::::::::::
    Portfolio Section
 ::::::::::::::::::::::::::::::::::::*/
 
@@ -634,129 +589,12 @@ button:focus {
   grid-template-rows: auto;
 }
 
-.row.portfolio .col-lg-4 {
-  padding-left: 7.5px;
-  padding-right: 7.5px;
-}
-
-.single-portfolio {
-  width: 500px;
-  height: 240px;
-  margin-bottom: 15px;
-  background-position: center;
-  background-size: cover;
-  background-color: #ddd;
-  padding: 15px;
-  position: relative;
-  z-index: 1;
-  overflow: hidden;
-}
-.single-portfolio:after {
-  position: absolute;
-  content: "";
-  left: 0;
-  bottom: 0;
-  width: 100%;
-  height: 0;
-  background-color: #000;
-  opacity: 0.7;
-  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
-  -webkit-transition: 0.3s;
-  transition: 0.3s;
-  z-index: -1;
-}
-
-.single-portfolio:hover:after {
-  height: 100%;
-}
-
-.portfolio-icon {
-  opacity: 0;
-  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
-  visibility: hidden;
-  -webkit-transition: 0.6s;
-  transition: 0.6s;
-}
-
-.single-portfolio:hover .portfolio-icon {
-  opacity: 1;
-  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
-  visibility: visible;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.portfolio-icon > div {
-  /* border: 1px solid red; */
-  background-color: transparent;
-  width: 80%;
-  text-align: left;
-  -webkit-transition: 0.3s;
-  transition: 0.3s;
-}
-.portfolio-icon > div > p {
-  color: white;
-}
-.portfolio-icon > div > p > b {
-  color:#ffc900;
-}
-.portfolio-hover {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-}
-.portfolio-hover a {
-  width: 30px;
-  height: 30px;
-}
-.portfolio-hover h4 {
-  color: #fff;
-  text-align: center;
-}
-
-.portfolio-hover {
-  position: absolute;
-  width: 100%;
-  left: 0;
-  bottom: -60px;
-  padding: 5px;
-  z-index: 1;
-  -webkit-transition: 0.3s;
-  transition: 0.3s;
-  opacity: 0;
-  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
-  visibility: hidden;
-}
-
-.portfolio-hover:after {
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  width: 100%;
-  height: 100%;
-  content: "";
-  background-color: #000;
-  z-index: -1;
-}
-
-.single-portfolio:hover .portfolio-hover {
-  bottom: 0;
-  opacity: 1;
-  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
-  visibility: visible;
-}
-
 #gitstats {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 110px;
   margin-top: 50px;
 }
-
-/*::::::::::::::::::::::::::::::::::::
-   Frequently asked questions(Deleted);
-::::::::::::::::::::::::::::::::::::*/
 
 /*::::::::::::::::::::::::::::::::::::
    Blog Section
@@ -809,26 +647,6 @@ h4.blog-title a {
 }
 
 /*::::::::::::::::::::::::::::::::::::
-   Blog Main Page(Deleted)
-::::::::::::::::::::::::::::::::::::*/
-
-/*::::::::::::::::::::::::::::::::::::
-   Sidebar(Deleted)
-::::::::::::::::::::::::::::::::::::*/
-
-/*::::::::::::::::::::::::::::::::::::
-   Single Blog(Deleted)
-::::::::::::::::::::::::::::::::::::*/
-
-/*::::::::::::::::::::::::::::::::::::
-   Testimonial Section(Deleted)
-::::::::::::::::::::::::::::::::::::*/
-
-/*::::::::::::::::::::::::::::::::::::
-   Team Section(Deleted)
-::::::::::::::::::::::::::::::::::::*/
-
-/*::::::::::::::::::::::::::::::::::::
    Call to Action Area
 ::::::::::::::::::::::::::::::::::::*/
 
@@ -845,12 +663,7 @@ h4.blog-title a {
   color: #fff;
   border-color: #000;
   background-color: #000;
-}
-
-/*::::::::::::::::::::::::::::::::::::
-   Pricing Area(Deleted)
-::::::::::::::::::::::::::::::::::::*/
-/* 
+} 
 
 /*::::::::::::::::::::::::::::::::::::
    Contact Area 
@@ -975,18 +788,29 @@ input:-webkit-autofill {
         Footer Area
 :::::::::::::::::::::::::::::::::::*/
 
-.foo er-area {
+.footer-area {
+  border-top: 3px solid #ffc900;
   padding: 30px;
   background-color: #000;
-  border-bottom: 5px solid #ffc900;
+  border-bottom: 3px solid #ffc900;
+}
+.footer-link{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
-.copyright-text a {
+.footer-link a {
   color: #eee;
   -webkit-transition: 0.3s;
   transition: 0.3s;
 }
 
-.copyright-text a:hover {
+.footer-link a:hover {
   color: #ffc900;
+}
+
+#icon-div{
+  border: 1px solid red;
+  width: 30%;
 }
