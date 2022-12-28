@@ -584,11 +584,81 @@ button:focus {
   display: none;
 }
 .portfolio {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: auto;
+ /* border: 1px solid black;  */
+ display: grid;
+ grid-template-columns: repeat(2,1fr);
+ gap: 20px;
 }
+.single-p{
+  border: 1px solid #00b1d2;
+  background-color: #181818  ;
+  height: 650px;
+  border-radius: 20px;
+  padding: 15px;
+  text-align: left;
+}
+.single-p:hover{
+    box-shadow: rgb(0,230,254) 0px 0px 0px 3px;
+}
+.img-p-div{
+  border: 1px solid black;
+  border-radius: 20px;
+  margin: auto;
+  width: 95%;
+  height: 50%;
+}
+.img-p-div img{
+  width: 100%;
+  height: 100%;
+}
+.p-name{
+  font-size:30px;
+  font-weight: bolder;
+  text-align: center;
+  margin-top: 20px;
+  color: #00e6fe;
+}
+.p-desc{
+  padding-left: 12px;
+  font-family: 'Poppins', sans-serif;
+  margin-top: 20px;
+  color: white;
 
+}
+.tech-stack{
+  padding-left: 12px;
+  margin-top: 20px;
+
+}
+.tech-stack strong{
+  font-size: 20px;
+  text-transform: uppercase;
+  color:white;
+}
+.tech-stack i{
+  font-size: 30px;
+  margin-left: 10px;
+  color: #00e6fe;
+}
+.tech-stack i:hover{
+  color:#ffc900  ;
+}
+.p-but-div{
+  /* border: 1px solid black; */
+  width: 95%;
+  margin: auto;
+  margin-top: 20px;
+  height:10%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.p-but-div a{
+border: 1px solid red;
+width: 30%;
+height: 100%;
+border-radius: 10px;
+}
 #gitstats {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
