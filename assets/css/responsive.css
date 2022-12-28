@@ -60,6 +60,10 @@
     text-align: left;
     margin-top: 15px;
   }
+
+  .single-p {
+    height: 700px;
+  }
 }
 
 /* Mobile Layout: 320px. */
@@ -244,6 +248,10 @@
   .contact-form {
     padding: 15px;
   }
+  .info-div {
+    width: 60%;
+    grid-template-columns: repeat(1, 1fr);
+  }
 }
 
 /* Wide Mobile Layout: 480px. */
@@ -356,5 +364,16 @@
     ::::::::::::::::::::::::::::::::::::*/
   .contact-form {
     padding: 30px;
+  }
+  .info-div {
+    width: 50%;
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+/* Wide Mobile Layout: below 480px. */
+
+@media only screen and (min-width: 100px) and (max-width: 480px) {
+  .single-p {
+    height: 650px;
   }
 }

@@ -590,58 +590,60 @@ button:focus {
  gap: 20px;
 }
 .single-p{
-  border: 1px solid #00b1d2;
-  background-color: #181818  ;
-  height: 650px;
+  border: 1px solid #ffc900;
+  height: 600px;
   border-radius: 20px;
   padding: 15px;
   text-align: left;
 }
 .single-p:hover{
-    box-shadow: rgb(0,230,254) 0px 0px 0px 3px;
+    box-shadow: rgb(255,201,0) 0px 0px 0px 3px;
+    transition: 0.5s;
 }
 .img-p-div{
-  border: 1px solid black;
+  border: 2px solid black;
   border-radius: 20px;
   margin: auto;
   width: 95%;
-  height: 50%;
+  height: 45%;
 }
 .img-p-div img{
   width: 100%;
   height: 100%;
+  border-radius: 20px;
 }
 .p-name{
   font-size:30px;
   font-weight: bolder;
   text-align: center;
   margin-top: 20px;
-  color: #00e6fe;
+  color: #ffc900;
 }
 .p-desc{
   padding-left: 12px;
   font-family: 'Poppins', sans-serif;
   margin-top: 20px;
-  color: white;
-
+  color: grey;
 }
 .tech-stack{
   padding-left: 12px;
   margin-top: 20px;
-
+ color: #ffc900;
 }
 .tech-stack strong{
   font-size: 20px;
   text-transform: uppercase;
-  color:white;
 }
 .tech-stack i{
   font-size: 30px;
   margin-left: 10px;
-  color: #00e6fe;
+  color: gray;
+  padding: 5px;
 }
 .tech-stack i:hover{
-  color:#ffc900  ;
+  color: #ffc900;
+  background-color: black;
+  transition:0.5s;
 }
 .p-but-div{
   /* border: 1px solid black; */
@@ -654,13 +656,22 @@ button:focus {
   align-items: center;
 }
 .p-but-div a{
-border: 1px solid red;
+border: 1px solid black;
 width: 30%;
 height: 100%;
 border-radius: 10px;
+display: flex;
+justify-content: center;
+align-items: center;
+color: black;
+}
+.p-but-div a:hover{
+  background-color: black;
+  color: #ffc900;
+  transition: 0.5s;
 }
 #gitstats {
-  display: grid;
+  display: grid;  
   grid-template-columns: repeat(2, 1fr);
   gap: 110px;
   margin-top: 50px;
@@ -854,13 +865,56 @@ input:-webkit-autofill {
 }
 /* My Form-Style */
 
+.info-div{
+  /* border: 1px solid black; */
+  margin: auto;
+  width: 61%;
+  display: grid;
+  gap: 30px;
+  grid-template-columns: repeat(2,1fr);
+  margin-top: 30px;
+}
+
+.info-div div{
+  /* border: 1px solid rebeccapurple; */
+  height: 120px;
+  padding: 10px;
+  background-color:#ffc900;
+}
+.info-div div i{
+  font-size: 25px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50px;
+  color:grey;
+  background-color:#333f4b;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.info-div div i:hover{
+  color:#ffc900;
+  transition: 0.3s;
+}
+.info-div div>h3{
+  display: flex;
+  gap: 10px;
+  font-size: 25px;
+}
+.info-div div>p{
+  padding-left: 60px;
+  font-size: 15px;
+  font-weight: 500;
+  display: flex;
+  gap: 10px;
+}
 /*:::::::::::::::::::::::::::::::::::
         Footer Area
 :::::::::::::::::::::::::::::::::::*/
 
 .footer-area {
   border-top: 3px solid #ffc900;
-  padding: 30px;
+  padding: 2px;
   background-color: #000;
   border-bottom: 3px solid #ffc900;
 }
@@ -875,6 +929,10 @@ input:-webkit-autofill {
   -webkit-transition: 0.3s;
   transition: 0.3s;
 }
+.footer-link i{
+ font-size: 30px;
+ color: #ffc900;
+}
 
 .footer-link a:hover {
   color: #ffc900;
@@ -884,3 +942,4 @@ input:-webkit-autofill {
   border: 1px solid red;
   width: 30%;
 }
+
