@@ -100,9 +100,9 @@
               </li>
               <li class="nav-item">
                 <a
-                  class="nav-link pr0"
-                  href="./assets/images/resume/G Raghavendra-Murty-Resume.pdf"
-                  download="G Raghavendra-Murty-Resume.pdf"
+                  class="nav-link pr0 drive"
+                  href="./assets/images/resume/G Raghavendra-Murty-Resume .pdf"
+                  download="G Raghavendra-Murty-Resume .pdf"
                   >RESUME</a
                 >
               </li>
@@ -743,5 +743,13 @@
     GitHubCalendar(".calendar", "GandhamRaghavendra");
     // or enable responsive functionality
     GitHubCalendar(".calendar", "GandhamRaghavendra", { responsive: true });
+  </script>
+
+  <script>
+    document.querySelector(".drive").addEventListener("click", () => {
+      window.open(
+        "https://drive.google.com/file/d/1AX4ahszTSCo7KYUwu9ly60VhFSXb3uUG/view?usp=share_link"
+      );
+    });
   </script>
 </html>
