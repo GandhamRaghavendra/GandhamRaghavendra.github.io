@@ -306,6 +306,7 @@ button:focus {
 .about-bg {
   height: 100%;
   min-height: 400px;
+  width: 400px;
   position: relative;
   background-size: cover;
   background-position: center;
@@ -368,6 +369,11 @@ button:focus {
 .about-content h5 {
   margin: 30px 0;
   text-transform: uppercase;
+}
+.aboutText {
+  font-family: unset;
+  font-size: 16px;
+  margin-top: 20px;
 }
 .skill-area {
   /* border: 1px solid black; */
@@ -573,6 +579,36 @@ button:focus {
 }
 
 /*::::::::::::::::::::::::::::::::::::
+   Skill Section
+::::::::::::::::::::::::::::::::::::*/
+
+.skilldiv{
+  /* border: 1px solid red; */
+  width: 75%;
+  margin: auto;
+  margin-top: 50px;
+  padding: 5%;
+  display: grid;
+  grid-template-columns: repeat(4,200px);
+  grid-template-rows: auto;
+  justify-content: space-evenly;
+  gap: 20px;
+}
+.skilldiv div{
+  border: 2px solid grey;
+  text-align: center;
+  padding: 10%;
+}
+.skilldiv div img{
+  width: 100px;
+  height: 100px;
+  margin-bottom: 20px
+}
+.skilldiv div p{
+  color: white;
+}
+
+/*::::::::::::::::::::::::::::::::::::
    Portfolio Section
 ::::::::::::::::::::::::::::::::::::*/
 
@@ -584,94 +620,94 @@ button:focus {
   display: none;
 }
 .portfolio {
- /* border: 1px solid black;  */
- display: grid;
- grid-template-columns: repeat(2,1fr);
- gap: 20px;
+  /* border: 1px solid black;  */
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
 }
-.single-p{
+.single-p {
   border: 1px solid #ffc900;
   height: 600px;
   border-radius: 20px;
   padding: 15px;
   text-align: left;
 }
-.single-p:hover{
-    box-shadow: rgb(255,201,0) 0px 0px 0px 3px;
-    transition: 0.5s;
+.single-p:hover {
+  box-shadow: rgb(255, 201, 0) 0px 0px 0px 3px;
+  transition: 0.5s;
 }
-.img-p-div{
+.img-p-div {
   border: 2px solid black;
   border-radius: 20px;
   margin: auto;
   width: 95%;
   height: 45%;
 }
-.img-p-div img{
+.img-p-div img {
   width: 100%;
   height: 100%;
   border-radius: 20px;
 }
-.p-name{
-  font-size:30px;
+.p-name {
+  font-size: 30px;
   font-weight: bolder;
   text-align: center;
   margin-top: 20px;
   color: #ffc900;
 }
-.p-desc{
+.p-desc {
   padding-left: 12px;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   margin-top: 20px;
   color: grey;
 }
-.tech-stack{
+.tech-stack {
   padding-left: 12px;
   margin-top: 20px;
- color: #ffc900;
+  color: #ffc900;
 }
-.tech-stack strong{
+.tech-stack strong {
   font-size: 20px;
   text-transform: uppercase;
 }
-.tech-stack i{
+.tech-stack i {
   font-size: 30px;
   margin-left: 10px;
   color: gray;
   padding: 5px;
 }
-.tech-stack i:hover{
+.tech-stack i:hover {
   color: #ffc900;
   background-color: black;
-  transition:0.5s;
+  transition: 0.5s;
 }
-.p-but-div{
+.p-but-div {
   /* border: 1px solid black; */
   width: 95%;
   margin: auto;
   margin-top: 20px;
-  height:10%;
+  height: 10%;
   display: flex;
   justify-content: space-around;
   align-items: center;
 }
-.p-but-div a{
-border: 1px solid black;
-width: 30%;
-height: 100%;
-border-radius: 10px;
-display: flex;
-justify-content: center;
-align-items: center;
-color: black;
+.p-but-div a {
+  border: 1px solid black;
+  width: 30%;
+  height: 100%;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: black;
 }
-.p-but-div a:hover{
+.p-but-div a:hover {
   background-color: black;
   color: #ffc900;
   transition: 0.5s;
 }
 #gitstats {
-  display: grid;  
+  display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 110px;
   margin-top: 50px;
@@ -744,7 +780,7 @@ h4.blog-title a {
   color: #fff;
   border-color: #000;
   background-color: #000;
-} 
+}
 
 /*::::::::::::::::::::::::::::::::::::
    Contact Area 
@@ -865,43 +901,43 @@ input:-webkit-autofill {
 }
 /* My Form-Style */
 
-.info-div{
+.info-div {
   /* border: 1px solid black; */
   margin: auto;
   width: 61%;
   display: grid;
   gap: 30px;
-  grid-template-columns: repeat(2,1fr);
+  grid-template-columns: repeat(2, 1fr);
   margin-top: 30px;
 }
 
-.info-div div{
+.info-div div {
   /* border: 1px solid rebeccapurple; */
   height: 120px;
   padding: 10px;
-  background-color:#ffc900;
+  background-color: #ffc900;
 }
-.info-div div i{
+.info-div div i {
   font-size: 25px;
   width: 50px;
   height: 50px;
   border-radius: 50px;
-  color:grey;
-  background-color:#333f4b;
+  color: grey;
+  background-color: #333f4b;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.info-div div i:hover{
-  color:#ffc900;
+.info-div div i:hover {
+  color: #ffc900;
   transition: 0.3s;
 }
-.info-div div>h3{
+.info-div div > h3 {
   display: flex;
   gap: 10px;
   font-size: 25px;
 }
-.info-div div>p{
+.info-div div > p {
   padding-left: 60px;
   font-size: 15px;
   font-weight: 500;
@@ -918,7 +954,7 @@ input:-webkit-autofill {
   background-color: #000;
   border-bottom: 3px solid #ffc900;
 }
-.footer-link{
+.footer-link {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -929,17 +965,16 @@ input:-webkit-autofill {
   -webkit-transition: 0.3s;
   transition: 0.3s;
 }
-.footer-link i{
- font-size: 30px;
- color: #ffc900;
+.footer-link i {
+  font-size: 30px;
+  color: #ffc900;
 }
 
 .footer-link a:hover {
   color: #ffc900;
 }
 
-#icon-div{
+#icon-div {
   border: 1px solid red;
   width: 30%;
 }
-

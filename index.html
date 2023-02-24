@@ -90,6 +90,9 @@
                 <a class="nav-link" href="#service">EDUCATION</a>
               </li>
               <li class="nav-item">
+                <a class="nav-link" href="#Skill">SKILL</a>
+              </li>
+              <li class="nav-item">
                 <a class="nav-link" href="#portfolio">PROJECT</a>
               </li>
               <li class="nav-item">
@@ -101,8 +104,8 @@
               <li class="nav-item">
                 <a
                   class="nav-link pr0 drive"
-                  href="./assets/images/resume/G Raghavendra-Murty-Resume .pdf"
-                  download="G Raghavendra-Murty-Resume .pdf"
+                  href="./assets/images/resume/G Raghavendra-Murty-Resume.pdf"
+                  download="G-Raghavendra-Murty-Resume.pdf"
                   >RESUME</a
                 >
               </li>
@@ -128,7 +131,7 @@
               </h3>
               <a
                 href="./assets/images/resume/G Raghavendra-Murty-Resume .pdf"
-                class="button smooth-scroll"
+                class="button smooth-scroll drive2"
                 download="G Raghavendra-Murty-Resume.pdf"
                 >Download CV</a
               >
@@ -160,10 +163,6 @@
           <div class="col-lg-6">
             <div class="section-title text-center">
               <h2>About Me</h2>
-              <p>
-                An Enthusiastic Programmer who likes to solve puzzles and learn
-                new technology.
-              </p>
             </div>
           </div>
         </div>
@@ -199,62 +198,31 @@
           <div class="col-lg-6">
             <div class="about-content">
               <h2>Hello, I am <span>G Raghavendra</span></h2>
-              <h4>Full-Stack-Developer,Java-Developer</h4>
-              <p></p>
+              <p class="aboutText">
+                A Java Developer from Chatrapur, Odisha. With a strong attention
+                to detail and a dedication to collaboration, I am passionate
+                about finding creative solutions to problems.
+              </p>
+              <p class="aboutText">
+                Over the course of my career, I have gained extensive experience
+                in both frontend and backend technologies, including Java,
+                SpringBoot, Hibernate, REST APIs, Maven, HTML, CSS, and
+                JavaScript. This hands-on experience has allowed me to develop a
+                deep understanding of how these technologies can be used to
+                build robust, scalable applications.
+              </p>
+              <p class="aboutText">
+                I am excited to apply my skills and knowledge to new challenges
+                and to contribute to the success of an organization. Thank you
+                for considering my qualifications.
+              </p>
 
-              <h5>My Skills</h5>
+              <!-- <h5>My Skills</h5> -->
 
               <!-- Skill Area -->
-              <div id="skills" class="skill-area">
-                <!-- Single skill -->
-                <div class="sub-skill">
-                  <img src="/assets/images/java.png" alt="error" />
-                  <h4>Core Java</h4>
-                </div>
-                <!-- //Single skill -->
-                <!-- Single skill -->
-                <div class="sub-skill">
-                  <img src="/assets/images/html-5.png" alt="error" />
-                  <h4>HTML 5</h4>
-                </div>
-                <!-- //Single skill -->
-                <!-- Single skill -->
-                <div class="sub-skill">
-                  <img src="/assets/images/css-3.png" alt="error" />
-                  <h4>CSS 3</h4>
-                </div>
-                <!-- //Single skill -->
-                <!-- Single skill -->
-                <div class="sub-skill">
-                  <img src="/assets/images/js.png" alt="error" />
-                  <h4>JavaScript</h4>
-                </div>
-                <!-- //Single skill -->
-                <!-- Single skill -->
-                <div class="sub-skill">
-                  <img src="/assets/images/php.png" alt="error" />
-                  <h4>PHP</h4>
-                </div>
-                <!-- //Single skill -->
-                <!-- Single skill -->
-                <div class="sub-skill">
-                  <img src="/assets/images/java.png" alt="error" />
-                  <h4>HIBERNATE</h4>
-                </div>
-                <!-- //Single skill -->
-                <!-- Single skill -->
-                <div class="sub-skill">
-                  <img src="/assets/images/Restapi.png" alt="error" />
-                  <h4>Rest Api</h4>
-                </div>
-                <!-- //Single skill -->
-                <!-- Single skill -->
-                <div class="sub-skill">
-                  <img src="/assets/images/mysql.png" alt="error" />
-                  <h4>MySQL</h4>
-                </div>
-                <!-- //Single skill -->
-              </div>
+              <!-- <div id="skills" class="skill-area">
+                
+              </div> -->
               <!-- //Skill Area -->
             </div>
           </div>
@@ -367,6 +335,50 @@
       </div>
     </section>
     <!-- ====== //Service Section ====== -->
+
+    <!-- ====== Skills Section ====== -->
+
+    <section id="Skill" class="section-padding pb-85" style="background-color: black;">
+      <div class="row justify-content-center">
+        <div class="col-lg-6">
+          <div class="text-center">
+            <h2 style="color: white;">TECHNICAL SKILLS & TOOLS</h2>
+            <p></p>
+          </div>
+        </div>
+      </div>
+      <div class="skilldiv">
+        <div>
+          <img src="./assets/images/skill/java.png" alt="">
+          <p>Java</p>
+        </div>
+        <div>
+          <img src="./assets/images/skill/spring.png" alt="">
+          <p>Spring</p>
+        </div>
+        <div>
+          <img src="./assets/images/skill/hibernate.png" alt="">
+          <p>Hibernate</p>
+        </div>
+        <div>
+          <img src="./assets/images/skill/mysql.png" alt="">
+          <p>MySql</p>
+        </div>
+        <div>
+          <img src="./assets/images/skill/html.png" alt="">
+          <p>HTML</p>
+        </div>
+        <div>
+          <img src="./assets/images/skill/css.png" alt="">
+          <p>CSS</p>
+        </div>
+        <div>
+          <img src="./assets/images/skill/javascript.svg" alt="">
+          <p>JavaScript</p>
+        </div>
+      </div>
+    </section>
+    <!-- ====== //Skills Section ====== -->
 
     <!-- ====== Portfolio Section ====== -->
     <section
@@ -748,7 +760,13 @@
   <script>
     document.querySelector(".drive").addEventListener("click", () => {
       window.open(
-        "https://drive.google.com/file/d/1AX4ahszTSCo7KYUwu9ly60VhFSXb3uUG/view?usp=share_link"
+        "https://drive.google.com/file/d/1vMYw6vsST_S1pNEbceREOjyA4SG8RSpg/view?usp=share_link"
+      );
+    });
+
+    document.querySelector(".drive2").addEventListener("click", () => {
+      window.open(
+        "https://drive.google.com/file/d/1vMYw6vsST_S1pNEbceREOjyA4SG8RSpg/view?usp=share_link"
       );
     });
   </script>

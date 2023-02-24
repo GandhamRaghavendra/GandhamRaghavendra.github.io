@@ -48,6 +48,13 @@
   }
 
   /*::::::::::::::::::::::::::::::::::::
+       Skill Section
+    ::::::::::::::::::::::::::::::::::::*/
+    .skilldiv{
+      grid-template-columns: repeat(3,200px);
+    }
+
+  /*::::::::::::::::::::::::::::::::::::
        Frequently asked questions
     ::::::::::::::::::::::::::::::::::::*/
   .faq-content {
@@ -182,6 +189,13 @@
   .service-icon {
     font-size: 45px;
   }
+
+  /*::::::::::::::::::::::::::::::::::::
+       Skill Section
+    ::::::::::::::::::::::::::::::::::::*/
+    .skilldiv{
+      grid-template-columns: repeat(2,200px);
+    }
 
   /*::::::::::::::::::::::::::::::::::::
        Frequently asked questions
@@ -327,6 +341,13 @@
   .service-area::before {
     height: 100%;
   }
+
+  /*::::::::::::::::::::::::::::::::::::
+       Skill Section
+    ::::::::::::::::::::::::::::::::::::*/
+    .skilldiv{
+      grid-template-columns: repeat(1,200px);
+    }
 
   /*::::::::::::::::::::::::::::::::::::
        Frequently asked questions
