@@ -708,8 +708,8 @@ button:focus {
 }
 #gitstats {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 110px;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 50px;
   margin-top: 50px;
 }
 
