@@ -102,12 +102,13 @@
                 <a class="nav-link pr0 contact" href="#contact">CONTACT</a>
               </li>
               <li class="nav-item">
-                <a
-                  class="nav-link pr0 drive resume"
-                  href="fw19_0904-G-Raghavendra-Murty-Resume.pdf"
-                  download="G-Raghavendra-Murty-Resume.pdf"
-                  >RESUME</a
+                <button
+                  class="nav-link pr0 resume-button-1"
+                  style="background-color: transparent; border: none"
+                  onclick="downloadResume()"
                 >
+                  RESUME
+                </button>
               </li>
             </ul>
           </div>
@@ -129,12 +130,13 @@
               <h3 style="color: white">
                 And I'm a <span class="typed" style="color: #ffc900"></span>
               </h3>
-              <a
-                href="fw19_0904-G-Raghavendra-Murty-Resume.pdf"
-                class="button smooth-scroll drive2"
-                download="G-Raghavendra-Murty-Resume.pdf"
-                >Download CV</a
+              <button
+                class="button smooth-scroll resume-button-2"
+                style="background-color: transparent"
+                onclick="downloadResume()"
               >
+                Download CV
+              </button>
             </div>
           </div>
         </div>
@@ -145,7 +147,7 @@
         <div class="single-slider">
           <!-- Single Background -->
           <div
-            class="slider-bg home-img"
+            class="slider-bg"
             style="background-image: url(assets/images/hero-area/img-1.webp)"
           ></div>
           <!-- // Single Background -->
@@ -156,7 +158,10 @@
     <!-- ====== //Hero Area ====== -->
 
     <!-- ====== About Area ====== -->
-    <section id="about" class="section-padding about-area bg-light about section">
+    <section
+      id="about"
+      class="section-padding about-area bg-light about section"
+    >
       <div class="container">
         <!-- Section Title -->
         <div class="row justify-content-center">
@@ -173,6 +178,7 @@
               class="about-bg"
               style="background-image: url(assets/images/about-bg.png)"
             >
+              <!-- <img class="home-img" style="display: none;" src="./assets/images/about-bg.png" alt=""> -->
               <!-- Social Link -->
               <div class="social-aria">
                 <a
@@ -197,7 +203,9 @@
           </div>
           <div class="col-lg-6">
             <div class="about-content">
-              <h2>Hello, I am <span id="user-detail-name">G Raghavendra</span></h2>
+              <h2>
+                Hello, I am <span id="user-detail-name">G Raghavendra</span>
+              </h2>
               <p class="aboutText" id="user-detail-intro">
                 A Java Developer from Chatrapur, Odisha. With a strong attention
                 to detail and a dedication to collaboration, I am passionate
@@ -216,14 +224,13 @@
                 and to contribute to the success of an organization. Thank you
                 for considering my qualifications.
               </p>
-
-              <!-- <h5>My Skills</h5> -->
-
-              <!-- Skill Area -->
-              <!-- <div id="skills" class="skill-area">
-                
-              </div> -->
-              <!-- //Skill Area -->
+              <button
+                class="button resume-button-2"
+                style="background-color: #828282"
+                onclick="downloadResume()"
+              >
+              Resume
+              </button>
             </div>
           </div>
         </div>
@@ -353,31 +360,59 @@
       </div>
       <div class="skilldiv">
         <div class="skills-card">
-          <img class="skills-card-img" src="./assets/images/skill/java.png" alt="" />
+          <img
+            class="skills-card-img"
+            src="./assets/images/skill/java.png"
+            alt=""
+          />
           <p class="skills-card-name">Java</p>
         </div>
         <div class="skills-card">
-          <img class="skills-card-img" src="./assets/images/skill/spring.png" alt="" />
+          <img
+            class="skills-card-img"
+            src="./assets/images/skill/spring.png"
+            alt=""
+          />
           <p class="skills-card-name">Spring</p>
         </div>
         <div class="skills-card">
-          <img class="skills-card-img" src="./assets/images/skill/hibernate.png" alt="" />
+          <img
+            class="skills-card-img"
+            src="./assets/images/skill/hibernate.png"
+            alt=""
+          />
           <p class="skills-card-name">Hibernate</p>
         </div>
         <div class="skills-card">
-          <img class="skills-card-img" src="./assets/images/skill/mysql.png" alt="" />
+          <img
+            class="skills-card-img"
+            src="./assets/images/skill/mysql.png"
+            alt=""
+          />
           <p class="skills-card-name">MySql</p>
         </div>
         <div class="skills-card">
-          <img class="skills-card-img" src="./assets/images/skill/html.png" alt="" />
+          <img
+            class="skills-card-img"
+            src="./assets/images/skill/html.png"
+            alt=""
+          />
           <p class="skills-card-name">HTML</p>
         </div>
         <div class="skills-card">
-          <img class="skills-card-img" src="./assets/images/skill/css.png" alt="" />
+          <img
+            class="skills-card-img"
+            src="./assets/images/skill/css.png"
+            alt=""
+          />
           <p class="skills-card-name">CSS</p>
         </div>
         <div class="skills-card">
-          <img class="skills-card-img" src="./assets/images/skill/javascript.svg" alt="" />
+          <img
+            class="skills-card-img"
+            src="./assets/images/skill/javascript.svg"
+            alt=""
+          />
           <p class="skills-card-name">JavaScript</p>
         </div>
       </div>
@@ -386,7 +421,7 @@
 
     <!-- ====== Portfolio Section ====== -->
     <section
-      id="projects" 
+      id="projects"
       class="section-padding pb-85 portfolio-area bg-light"
     >
       <div class="container">
@@ -423,13 +458,13 @@
             </p>
             <div class="p-but-div">
               <a
-              class="project-deployed-link"
+                class="project-deployed-link"
                 href="https://celebrated-begonia-b260fc.netlify.app"
                 target="_blank"
                 >GO LIVE</a
               >
               <a
-              class="project-github-link"
+                class="project-github-link"
                 href="https://github.com/Madhusudan0906/descriptive-neck-7504"
                 target="_blank"
                 >SOURCE CODE</a
@@ -457,13 +492,13 @@
             </p>
             <div class="p-but-div">
               <a
-              class="project-deployed-link"
+                class="project-deployed-link"
                 href="https://heartfelt-sorbet-9188d0.netlify.app/"
                 target="_blank"
                 >GO LIVE</a
               >
               <a
-              class="project-github-link"
+                class="project-github-link"
                 href="https://github.com/riturajnagar/Max-Fashion-clone-"
                 target="_blank"
                 >SOURCE CODE</a
@@ -489,13 +524,13 @@
             </p>
             <div class="p-but-div">
               <a
-              class="project-deployed-link"
+                class="project-deployed-link"
                 href="https://drive.google.com/file/d/1lX1Ysvh2bv1qSKbl9QdL5S75CofzBgp2/view?usp=share_link"
                 target="_blank"
                 >VIEW</a
               >
               <a
-              class="project-github-link"
+                class="project-github-link"
                 href="https://github.com/GandhamRaghavendra/auspicious-fog-5566"
                 target="_blank"
                 >SOURCE CODE</a
@@ -521,13 +556,15 @@
             </p>
             <div class="p-but-div">
               <a
-              class="project-github-link"
+                class="project-github-link"
                 href="https://drive.google.com/file/d/1lX1Ysvh2bv1qSKbl9QdL5S75CofzBgp2/view?usp=share_link"
                 target="bl
               "
                 >VIEW</a
               >
-              <a class="project-deployed-link" href="https://github.com/abhishek-0713/MyWallet"
+              <a
+                class="project-deployed-link"
+                href="https://github.com/abhishek-0713/MyWallet"
                 >SOURCE CODE</a
               >
             </div>
@@ -556,15 +593,17 @@
         </div>
         <div id="gitstats">
           <img
-          id="github-streak-stats"
+            id="github-streak-stats"
             src="https://github-readme-streak-stats.herokuapp.com/?user=GandhamRaghavendra&theme=black-ice&hide_border=true&stroke=0000&background=181818"
             alt="Raghu"
           />
           <img
-          id="github-top-langs"
-           src="https://github-readme-stats.vercel.app/api/top-langs/?username=GandhamRaghavendra&layout=compact" alt="">
+            id="github-top-langs"
+            src="https://github-readme-stats.vercel.app/api/top-langs/?username=GandhamRaghavendra&layout=compact"
+            alt=""
+          />
           <img
-          id="github-stats-card"
+            id="github-stats-card"
             src="https://github-readme-stats.vercel.app/api?username=GandhamRaghavendra&show_icons=true&count_private=true&theme=react&hide_border=true&bg_color=181818"
           />
         </div>
@@ -652,12 +691,15 @@
           <h3><i class="fas fa-share-alt"></i>Social Profiles</h3>
           <p>
             <a
-            id="contact-linkedin"
+              id="contact-linkedin"
               href="https://www.linkedin.com/in/raghavendra-gandham-80a82a203"
               target="_blank"
               ><i class="fab fa-linkedin"></i
             ></a>
-            <a id="contact-github" href="https://github.com/GandhamRaghavendra" target="_blank"
+            <a
+              id="contact-github"
+              href="https://github.com/GandhamRaghavendra"
+              target="_blank"
               ><i class="fab fa-github-square"></i
             ></a>
             <a
@@ -797,5 +839,23 @@
         "https://drive.google.com/file/d/1vMYw6vsST_S1pNEbceREOjyA4SG8RSpg/view?usp=share_link"
       );
     });
+
+    // Methos for download ResumeFile and also directing to Drive.
+    function downloadResume() {
+      // File to download.
+      let url = "fw19_0904-G-Raghavendra-Murty-Resume.pdf";
+
+      let filename = "G-Raghavendra-Murty-Resume.pdf";
+
+      let anchor = document.createElement("a");
+      anchor.download = filename;
+      anchor.href = url;
+      anchor.click();
+
+      // Direct to Drive.
+      window.open(
+        "https://drive.google.com/file/d/1vMYw6vsST_S1pNEbceREOjyA4SG8RSpg/view?usp=share_link"
+      );
+    }
   </script>
 </html>

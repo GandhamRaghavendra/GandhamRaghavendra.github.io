@@ -712,6 +712,10 @@ button:focus {
   gap: 50px;
   margin-top: 50px;
 }
+#gitstats img{
+  display: block;
+  margin: auto;
+}
 
 /*::::::::::::::::::::::::::::::::::::
    Blog Section
