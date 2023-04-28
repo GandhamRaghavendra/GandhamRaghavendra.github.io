@@ -93,7 +93,7 @@
                 <a class="nav-link skills" href="#skills">SKILL</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link projects" href="#portfolio">PROJECT</a>
+                <a class="nav-link projects" href="#projects">PROJECT</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="#Github">GITHUB</a>
@@ -145,7 +145,7 @@
         <div class="single-slider">
           <!-- Single Background -->
           <div
-            class="slider-bg"
+            class="slider-bg home-img"
             style="background-image: url(assets/images/hero-area/img-1.webp)"
           ></div>
           <!-- // Single Background -->
@@ -171,7 +171,7 @@
           <div class="col-lg-6">
             <div
               class="about-bg"
-              style="background-image: url(assets/images/about-bg.jpg)"
+              style="background-image: url(assets/images/about-bg.png)"
             >
               <!-- Social Link -->
               <div class="social-aria">
@@ -197,8 +197,8 @@
           </div>
           <div class="col-lg-6">
             <div class="about-content">
-              <h2>Hello, I am <span>G Raghavendra</span></h2>
-              <p class="aboutText">
+              <h2>Hello, I am <span id="user-detail-name">G Raghavendra</span></h2>
+              <p class="aboutText" id="user-detail-intro">
                 A Java Developer from Chatrapur, Odisha. With a strong attention
                 to detail and a dedication to collaboration, I am passionate
                 about finding creative solutions to problems.
@@ -270,7 +270,7 @@
           <!-- Single Fact Counter -->
           <div class="col-lg-3 col-md-6 text-center">
             <div class="single-fun-fact">
-              <h2><span class="counter-value" data-count="150">0</span>+</h2>
+              <h2><span class="counter-value" data-count="600">0</span>+</h2>
               <p>Git Commits Made</p>
             </div>
           </div>
@@ -386,7 +386,6 @@
 
     <!-- ====== Portfolio Section ====== -->
     <section
-      id="portfolio"
       id="projects" 
       class="section-padding pb-85 portfolio-area bg-light"
     >
@@ -641,11 +640,12 @@
           <h3><i class="fas fa-share-alt"></i>Social Profiles</h3>
           <p>
             <a
+            id="contact-linkedin"
               href="https://www.linkedin.com/in/raghavendra-gandham-80a82a203"
               target="_blank"
               ><i class="fab fa-linkedin"></i
             ></a>
-            <a href="https://github.com/GandhamRaghavendra" target="_blank"
+            <a id="contact-github" href="https://github.com/GandhamRaghavendra" target="_blank"
               ><i class="fab fa-github-square"></i
             ></a>
             <a
@@ -658,11 +658,11 @@
         </div>
         <div>
           <h3><i class="far fa-envelope"></i>Email</h3>
-          <p>graghavendramurty@gmail.com</p>
+          <p id="contact-email">graghavendramurty@gmail.com</p>
         </div>
         <div>
           <h3><i class="fas fa-mobile-alt"></i>Contact</h3>
-          <p>+91 9556517733</p>
+          <p id="contact-phone">+91 9556517733</p>
         </div>
       </div>
     </section>
