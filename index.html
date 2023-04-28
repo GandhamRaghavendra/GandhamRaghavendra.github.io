@@ -102,13 +102,12 @@
                 <a class="nav-link pr0 contact" href="#contact">CONTACT</a>
               </li>
               <li class="nav-item">
-                <button
-                  class="nav-link pr0 resume-button-1"
-                  style="background-color: transparent; border: none"
-                  onclick="downloadResume()"
+                <a
+                  class="nav-link pr0 drive resume"
+                  href="fw19_0904-G-Raghavendra-Murty-Resume.pdf"
+                  download="G-Raghavendra-Murty-Resume.pdf"
+                  >RESUME</a
                 >
-                  RESUME
-                </button>
               </li>
             </ul>
           </div>
@@ -130,13 +129,19 @@
               <h3 style="color: white">
                 And I'm a <span class="typed" style="color: #ffc900"></span>
               </h3>
-              <button
-                class="button smooth-scroll resume-button-2"
+              <a
+                href="fw19_0904-G-Raghavendra-Murty-Resume.pdf"
+                class="button smooth-scroll drive2"
+                download="G-Raghavendra-Murty-Resume.pdf"
+                >Download CV</a
+              >
+              <!-- <button
+                class="button smooth-scroll"
                 style="background-color: transparent"
                 onclick="downloadResume()"
               >
                 Download CV
-              </button>
+              </button> -->
             </div>
           </div>
         </div>
@@ -224,13 +229,6 @@
                 and to contribute to the success of an organization. Thank you
                 for considering my qualifications.
               </p>
-              <button
-                class="button resume-button-2"
-                style="background-color: #828282"
-                onclick="downloadResume()"
-              >
-              Resume
-              </button>
             </div>
           </div>
         </div>
@@ -840,8 +838,9 @@
       );
     });
 
-    // Methos for download ResumeFile and also directing to Drive.
+    // Methos for download Resume.
     function downloadResume() {
+
       // File to download.
       let url = "fw19_0904-G-Raghavendra-Murty-Resume.pdf";
 
@@ -852,8 +851,7 @@
       anchor.href = url;
       anchor.click();
 
-      // Direct to Drive.
-      window.open(
+       window.open(
         "https://drive.google.com/file/d/1vMYw6vsST_S1pNEbceREOjyA4SG8RSpg/view?usp=share_link"
       );
     }
